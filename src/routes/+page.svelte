@@ -1,7 +1,9 @@
 <script lang="ts">
     import { linkGroups } from "$lib/elements";
+    import { onMount } from "svelte";
     let query = ""
     let tijd = berekenTijd();
+    let zoekvak: HTMLInputElement;
     
     function extract(num: number) {
         return num.toString().padStart(2, "0")
@@ -14,13 +16,17 @@
 
     setInterval(() => {
         tijd = berekenTijd();
-    }, 1000)
+    }, 1000);
+
+    onMount(() => {
+        zoekvak.focus();
+    })
 </script>
 
 <div class="bg-black min-w-screen min-h-screen px-24 py-12 flex flex-col gap-6 text-white">
     <p class="text-2xl">{tijd}</p>
     
-    <input class="text-xl border-2 border-neutral-800 bg-black px-6 py-2 focus:bg-neutral-800" 
+    <input class="text-xl border-2 border-neutral-800 bg-black px-6 py-2 focus:bg-neutral-800" bind:this={zoekvak}
     placeholder="Zoek op Google..." bind:value={query} on:keypress={
     (e) => {if (e.key == "Enter") {window.location.href = encodeURI(`https://www.google.be/search?q=${query}`);}}}>
     
@@ -31,8 +37,8 @@
             <div class="flex flex-col gap-4 h-fit">
                 {#each lg.links as link}
                     <a class="flex flex-row gap-3 items-stretch group" href={link.href}>
-                        <div class="aspect-square bg-{link.title} group-hover:scale-125 transition-transform duration-75"></div>
-                        <p class="group-hover:translate-x-3 text-xl text-{link.title} transition-transform duration-75">{link.title}</p>
+                        <div class="aspect-square bg-{link.title.replace(/( |\.)/, "-")} group-hover:scale-125 transition-transform duration-75"></div>
+                        <p class="group-hover:translate-x-3 text-xl transition-transform duration-75">{link.title}</p>
                     </a>
                 {/each}
             </div>
