@@ -39,6 +39,7 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://tailwindcss.com/docs/", title: "Tailwind CSS",  colour: "38bdf8" },
             { href: "https://figma.com",             title: "Figma",         colour: "fe7161" },
             { href: "https://github.com",            title: "GitHub",        colour: "adbac7" },
+            { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV - Jira", colour: "0052cc"},
         ]
     },
     {
