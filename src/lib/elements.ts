@@ -20,6 +20,8 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://photos.google.com/",    title: "Photos",    colour: "4285f4" },
             { href: "https://keep.google.com/",      title: "Keep",      colour: "fbbc04" },
             { href: "https://mail.google.com/",      title: "Gmail",     colour: "3a9e58" },
+            { href: "https://docs.google.com/spreadsheets/u/0/", title: "Sheets", colour: "34a853"},
+            { href: "https://docs.google.com/document/u/0/",    title: "Documents",    colour: "4285f4" },
         ]
     },
     {
@@ -40,6 +42,7 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://figma.com",             title: "Figma",         colour: "fe7161" },
             { href: "https://github.com",            title: "GitHub",        colour: "adbac7" },
             { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV Jira", colour: "0052cc" },
+            { href: "https://regex101.com/",         title: "RegEx101",      colour: "1a2c42" }
         ]
     },
     {
