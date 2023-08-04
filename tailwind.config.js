@@ -17,7 +17,7 @@ for (let link of links) {
 const config = {
   content: ['./src/**/*.{html,js,ts,svelte}'],
   theme: {},
-  safelist: links.map(e => `bg-${e.title.replace(/( |\.)/, "-")}`),
+  safelist: links.map(e => `bg-${e.title.replaceAll(/( |\.)/g, '-')}`),
   plugins: [
     plugin(function ({addComponents}) {
       addComponents(
