@@ -42,6 +42,11 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://figma.com",             title: "Figma",         colour: "fe7161" },
             { href: "https://github.com",            title: "GitHub",        colour: "adbac7" },
             { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV Jira", colour: "0052cc" },
+            { href: "https://mobilevikings.atlassian.net/wiki/spaces/INT/pages/781942940/Technical+docs", title: "MV Technical Docs", colour: "0052cc" },
+            { href: "https://github.com/vikingco/mv-client", title: "MVGH - mv_client", colour: "adbac7" },
+            { href: "https://github.com/vikingco/skipta", title: "MVGH - skipta", colour: "adbac7" },
+            { href: "https://github.com/vikingco/unleashed-web-api", title: "MVGH - uwa", colour: "adbac7" },
+            { href: "https://github.com/vikingco/snuru", title: "MVGH - snuru", colour: "adbac7" },
             { href: "https://regex101.com/",         title: "RegEx101",      colour: "1a2c42" }
         ]
     },
