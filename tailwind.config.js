@@ -6,7 +6,7 @@ const links = linkGroups.flatMap(e => e.links);
 let componentDef = {}
 
 for (let link of links) {
-  componentDef[".bg-".concat(link.title.replace(/( |\.)/, "-"))] = {
+  componentDef[".bg-".concat(link.title.replaceAll(/( |\.)/g, '-'))] = {
     "background-color": `#${link.colour}`
   }
   // console.log(".bg-".concat(link.title.replace(/( |\.)/, "-")))
