@@ -42,14 +42,14 @@
     placeholder="Zoek op Google..." bind:value={query} on:keypress={
     (e) => {if (e.key == "Enter") {window.location.href = handleSearch();}}}>
     
-    <div class="grow columns-5 gap-x-6">
+    <div class="grow columns-4 gap-x-6">
         {#each linkGroups as lg}
         <div class="min-h-full bg-neutral-950 p-4">
             <h1 class="text-2xl mb-4">{lg.title}</h1>
             <div class="flex flex-col gap-4 h-fit">
                 {#each lg.links as link}
                     <a class="flex flex-row gap-3 items-stretch group" href={link.href}>
-                        <div class="aspect-square bg-{link.title.replace(/( |\.)/, "-")} group-hover:scale-125 transition-transform duration-75"></div>
+                        <div class="aspect-square bg-{link.title.replaceAll(/( |\.)/, "-")} group-hover:scale-125 transition-transform duration-75"></div>
                         <p class="group-hover:translate-x-3 text-xl transition-transform duration-75">{link.title}</p>
                     </a>
                 {/each}

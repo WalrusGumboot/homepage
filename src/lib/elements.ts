@@ -13,6 +13,8 @@ export const linkGroups: LinkGroup[] = [
     {
         title: "Google",
         links: [
+            { href: "https://docs.google.com/spreadsheets/u/0/", title: "Sheets", colour: "34a853" },
+            { href: "https://docs.google.com/document/u/0/", title: "Documents", colour: "4285f4" },
             { href: "https://calendar.google.com/", title: "Calendar", colour: "4285f4" },
             { href: "https://passwords.google.com/", title: "Passwords", colour: "4285f4" },
             { href: "https://drive.google.com/", title: "Drive", colour: "4285f4" },
@@ -20,8 +22,6 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://photos.google.com/", title: "Photos", colour: "4285f4" },
             { href: "https://keep.google.com/", title: "Keep", colour: "fbbc04" },
             { href: "https://mail.google.com/", title: "Gmail", colour: "3a9e58" },
-            { href: "https://docs.google.com/spreadsheets/u/0/", title: "Sheets", colour: "34a853" },
-            { href: "https://docs.google.com/document/u/0/", title: "Documents", colour: "4285f4" },
         ]
     },
     {
@@ -44,19 +44,11 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://vercel.com/dashboard", title: "Vercel", colour: "ffffff" },
             { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV Jira", colour: "0052cc" },
             { href: "https://mobilevikings.atlassian.net/wiki/spaces/INT/pages/781942940/Technical+docs", title: "MV Technical Docs", colour: "0052cc" },
-            { href: "https://github.com/vikingco/mv-client", title: "MVGH - mv_client", colour: "adbac7" },
-            { href: "https://github.com/vikingco/skipta", title: "MVGH - skipta", colour: "adbac7" },
-            { href: "https://github.com/vikingco/unleashed-web-api", title: "MVGH - uwa", colour: "adbac7" },
-            { href: "https://github.com/vikingco/snuru", title: "MVGH - snuru", colour: "adbac7" },
+            { href: "https://github.com/vikingco/mv-client", title: "mv-client", colour: "adbac7" },
+            { href: "https://github.com/vikingco/skipta", title: "skipta", colour: "adbac7" },
+            { href: "https://github.com/vikingco/unleashed-web-api", title: "uwa", colour: "adbac7" },
+            { href: "https://github.com/vikingco/snuru", title: "snuru", colour: "adbac7" },
             { href: "https://regex101.com/", title: "RegEx101", colour: "1a2c42" }
-        ]
-    },
-    {
-        title: "Teksten",
-        links: [
-            { href: "https://sefaria.org/", title: "Sefaria", colour: "212e50" },
-            { href: "https://thekingsbible.com/", title: "KJV", colour: "003366" },
-            { href: "https://quran.com/", title: "quran.com", colour: "2ca4ab" }
         ]
     },
     {
@@ -66,6 +58,7 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://webwsp.aps.kuleuven.be/sap/bc/ui2/flp", title: "KU Loket", colour: "354a5f" },
             { href: "https://overleaf.com", title: "Overleaf", colour: "459c3f" },
             { href: "https://typst.app", title: "Typst", colour: "239cad" },
+            { href: "https://math.stackexchange.com/", title: "Math SE", colour: "cb181f" }
         ]
     }
 ]

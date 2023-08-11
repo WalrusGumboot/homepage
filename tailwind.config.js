@@ -19,7 +19,7 @@ const config = {
   theme: {},
   safelist: links.map(e => `bg-${e.title.replaceAll(/( |\.)/g, '-')}`),
   plugins: [
-    plugin(function ({addComponents}) {
+    plugin(function ({ addComponents }) {
       addComponents(
         componentDef
       )
