@@ -49,7 +49,7 @@
             <div class="flex flex-col gap-4 h-fit">
                 {#each lg.links as link}
                     <a class="flex flex-row gap-3 items-stretch group" href={link.href}>
-                        <div class="aspect-square bg-{link.title.replaceAll(/( |\.)/, "-")} group-hover:scale-125 transition-transform duration-75"></div>
+                        <div class="aspect-square bg-{link.title.replaceAll(/( |\.)/g, "-")} group-hover:scale-125 transition-transform duration-75"></div>
                         <p class="group-hover:translate-x-3 text-xl transition-transform duration-75">{link.title}</p>
                     </a>
                 {/each}
