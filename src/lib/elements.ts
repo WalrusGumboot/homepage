@@ -32,7 +32,8 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://twitch.tv", title: "Twitch", colour: "a970ff" },
             { href: "https://web.whatsapp.com/", title: "WhatsApp", colour: "00bd07" },
             { href: "https://instagram.com/", title: "Instagram", colour: "f69a4b" },
-            { href: "https://www.messenger.com", title: "Messenger", colour: "aa00ff"}
+            { href: "https://www.messenger.com", title: "Messenger", colour: "aa00ff"},
+            { href: "https://www.facebook.com", title: "Facebook", colour: "0866ff"}
         ]
     },
     {
@@ -61,7 +62,8 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://overleaf.com", title: "Overleaf", colour: "459c3f" },
             { href: "https://typst.app", title: "Typst", colour: "239cad" },
             { href: "https://math.stackexchange.com/", title: "Math SE", colour: "cb181f" },
-            { href: "https://matlab.mathworks.com", title: "MATLAB", colour: "f49610" }
+            { href: "https://matlab.mathworks.com", title: "MATLAB", colour: "f49610" },
+            { href: "https://www.wolframalpha.com", title: "Wolfram Alpha", colour: "f88c63"}
         ]
     }
 ]
