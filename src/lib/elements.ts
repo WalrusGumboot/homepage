@@ -60,10 +60,11 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://webwsp.aps.kuleuven.be/sap/bc/ui2/flp", title: "KU Loket", colour: "354a5f" },
             { href: "https://onderwijsaanbod.kuleuven.be/opleidingen/n/SC_51016765.htm#bl=all", title: "Wiskundebachelor", colour: "00407a" },
             { href: "https://overleaf.com", title: "Overleaf", colour: "459c3f" },
-            { href: "https://typst.app", title: "Typst", colour: "239cad" },
+            { href: "https://typst.app/docs/reference", title: "Typst Reference", colour: "239cad" },
             { href: "https://math.stackexchange.com/", title: "Math SE", colour: "cb181f" },
             { href: "https://matlab.mathworks.com", title: "MATLAB", colour: "f49610" },
-            { href: "https://www.wolframalpha.com", title: "Wolfram Alpha", colour: "f88c63"}
+            { href: "https://www.wolframalpha.com", title: "Wolfram Alpha", colour: "f88c63"},
+            { href: "https://www.desmos.com/calculator", title: "Desmos", colour: "00a513"}
         ]
     }
 ]
