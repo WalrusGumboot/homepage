@@ -18,8 +18,8 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://drive.google.com/", title: "Drive", colour: "4285f4" },
             { href: "https://maps.google.com/", title: "Maps", colour: "4285f4" },
             { href: "https://photos.google.com/", title: "Photos", colour: "4285f4" },
-            { href: "https://keep.google.com/", title: "Keep", colour: "fbbc04" },
             { href: "https://docs.google.com/document/u/0/", title: "Documents", colour: "4285f4" },
+            { href: "https://keep.google.com/", title: "Keep", colour: "fbbc04" },
             { href: "https://docs.google.com/spreadsheets/u/0/", title: "Sheets", colour: "34a853" },
             { href: "https://mail.google.com/", title: "Gmail", colour: "3a9e58" },
         ]
@@ -29,7 +29,7 @@ export const linkGroups: LinkGroup[] = [
         links: [
             { href: "https://www.twitter.com/", title: "Twitter", colour: "1d9bf0" },
             { href: "https://www.youtube.com/", title: "YouTube", colour: "ff0000" },
-            { href: "https://twitch.tv", title: "Twitch", colour: "a970ff" },
+            // { href: "https://twitch.tv", title: "Twitch", colour: "a970ff" },
             { href: "https://web.whatsapp.com/", title: "WhatsApp", colour: "00bd07" },
             { href: "https://instagram.com/", title: "Instagram", colour: "f69a4b" },
             { href: "https://www.messenger.com", title: "Messenger", colour: "aa00ff"},
@@ -50,7 +50,8 @@ export const linkGroups: LinkGroup[] = [
             // { href: "https://github.com/vikingco/skipta", title: "skipta", colour: "adbac7" },
             // { href: "https://github.com/vikingco/unleashed-web-api", title: "uwa", colour: "adbac7" },
             // { href: "https://github.com/vikingco/snuru", title: "snuru", colour: "adbac7" },
-            { href: "https://regex101.com/", title: "RegEx101", colour: "1a2c42" }
+            { href: "https://regex101.com/", title: "RegEx101", colour: "1a2c42" },
+            { href: "https://kwispel.wina.be/", title: "kwispel", colour: "f0ddc0" }
         ]
     },
     {
