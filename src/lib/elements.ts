@@ -33,7 +33,8 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://web.whatsapp.com/", title: "WhatsApp", colour: "00bd07" },
             { href: "https://instagram.com/", title: "Instagram", colour: "f69a4b" },
             { href: "https://www.messenger.com", title: "Messenger", colour: "aa00ff"},
-            { href: "https://www.facebook.com", title: "Facebook", colour: "0866ff"}
+            { href: "https://www.facebook.com", title: "Facebook", colour: "0866ff"},
+            { href: "https://winaleuven.workplace.com/", title: "Workspace", colour: "4125be"}
         ]
     },
     {
@@ -44,12 +45,12 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://figma.com", title: "Figma", colour: "fe7161" },
             { href: "https://github.com", title: "GitHub", colour: "adbac7" },
             { href: "https://vercel.com/dashboard", title: "Vercel", colour: "ffffff" },
-            { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV Jira", colour: "0052cc" },
-            { href: "https://mobilevikings.atlassian.net/wiki/spaces/INT/pages/781942940/Technical+docs", title: "MV Technical Docs", colour: "0052cc" },
-            { href: "https://github.com/vikingco/mv-client", title: "mv-client", colour: "adbac7" },
-            { href: "https://github.com/vikingco/skipta", title: "skipta", colour: "adbac7" },
-            { href: "https://github.com/vikingco/unleashed-web-api", title: "uwa", colour: "adbac7" },
-            { href: "https://github.com/vikingco/snuru", title: "snuru", colour: "adbac7" },
+            // { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV Jira", colour: "0052cc" },
+            // { href: "https://mobilevikings.atlassian.net/wiki/spaces/INT/pages/781942940/Technical+docs", title: "MV Technical Docs", colour: "0052cc" },
+            // { href: "https://github.com/vikingco/mv-client", title: "mv-client", colour: "adbac7" },
+            // { href: "https://github.com/vikingco/skipta", title: "skipta", colour: "adbac7" },
+            // { href: "https://github.com/vikingco/unleashed-web-api", title: "uwa", colour: "adbac7" },
+            // { href: "https://github.com/vikingco/snuru", title: "snuru", colour: "adbac7" },
             { href: "https://regex101.com/", title: "RegEx101", colour: "1a2c42" },
             { href: "https://kwispel.wina.be/", title: "kwispel", colour: "f0ddc0" }
         ]
