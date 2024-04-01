@@ -77,7 +77,7 @@
     </div>
 
     <div class="grow flex flex-row gap-3">
-        {#each linkGroups as lg}
+        {#each linkGroups.slice(0, -1) as lg}
             <div
                 class="bg-black hover:bg-neutral-950 w-1/4 p-4 border-neutral-800 border-2 transition-all duration-200"
             >
@@ -104,5 +104,32 @@
                 </div>
             </div>
         {/each}
+    </div>
+    <div
+        class="bg-black hover:bg-neutral-950 p-4 border-neutral-800 border-2 transition-all duration-200"
+    >
+        <div class="flex flex-col gap-4 h-fit">
+            <h1 class="text-2xl mb-4">
+                {linkGroups[linkGroups.length - 1].title}
+            </h1>
+            {#each linkGroups[linkGroups.length - 1].links as link}
+                <a
+                    class="flex flex-row gap-3 items-stretch group"
+                    href={link.href}
+                >
+                    <div
+                        class="aspect-square bg-{link.title.replaceAll(
+                            /( |\.)/g,
+                            '-',
+                        )} group-hover:scale-x-125 origin-left transition-transform duration-75"
+                    ></div>
+                    <p
+                        class="group-hover:translate-x-3 text-xl transition-transform duration-75"
+                    >
+                        {link.title}
+                    </p>
+                </a>
+            {/each}
+        </div>
     </div>
 </div>

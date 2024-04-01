@@ -1,10 +1,10 @@
-export interface Link {
+export type Link = {
     href: string,
     title: string,
     colour: string
 }
 
-export interface LinkGroup {
+export type LinkGroup = {
     title: string,
     links: Link[]
 }
@@ -14,7 +14,7 @@ export const linkGroups: LinkGroup[] = [
         title: "Google",
         links: [
             { href: "https://calendar.google.com/", title: "Calendar", colour: "4285f4" },
-            { href: "https://passwords.google.com/", title: "Passwords", colour: "4285f4" },
+            // { href: "https://passwords.google.com/", title: "Passwords", colour: "4285f4" },
             { href: "https://drive.google.com/", title: "Drive", colour: "4285f4" },
             { href: "https://maps.google.com/", title: "Maps", colour: "4285f4" },
             { href: "https://photos.google.com/", title: "Photos", colour: "4285f4" },
@@ -34,13 +34,13 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://instagram.com/", title: "Instagram", colour: "f69a4b" },
             { href: "https://www.messenger.com", title: "Messenger", colour: "aa00ff"},
             { href: "https://www.facebook.com", title: "Facebook", colour: "0866ff"},
-            { href: "https://winaleuven.workplace.com/", title: "Workspace", colour: "4125be"}
+            { href: "https://winaleuven.workplace.com/", title: "Workplace", colour: "4125be"}
         ]
     },
     {
         title: "Ontwikkeling",
         links: [
-            { href: "https://stackoverflow.com/", title: "StackOverflow", colour: "f48024" },
+            // { href: "https://stackoverflow.com/", title: "StackOverflow", colour: "f48024" },
             { href: "https://tailwindcss.com/docs/", title: "Tailwind CSS", colour: "38bdf8" },
             { href: "https://figma.com", title: "Figma", colour: "fe7161" },
             { href: "https://github.com", title: "GitHub", colour: "adbac7" },
@@ -52,21 +52,30 @@ export const linkGroups: LinkGroup[] = [
             // { href: "https://github.com/vikingco/unleashed-web-api", title: "uwa", colour: "adbac7" },
             // { href: "https://github.com/vikingco/snuru", title: "snuru", colour: "adbac7" },
             { href: "https://regex101.com/", title: "RegEx101", colour: "1a2c42" },
-            { href: "https://kwispel.wina.be/", title: "kwispel", colour: "f0ddc0" }
+            { href: "https://kwispel.letocart.be/", title: "Kwispel", colour: "f0ddc0" }
         ]
     },
     {
         title: "Academisch",
         links: [
             { href: "https://toledo.kuleuven.be/portal", title: "Toledo", colour: "286090" },
-            { href: "https://webwsp.aps.kuleuven.be/sap/bc/ui2/flp", title: "KU Loket", colour: "354a5f" },
-            { href: "https://onderwijsaanbod.kuleuven.be/opleidingen/n/SC_51016765.htm#bl=all", title: "Wiskundebachelor", colour: "00407a" },
-            { href: "https://overleaf.com", title: "Overleaf", colour: "459c3f" },
-            { href: "https://typst.app/docs/reference", title: "Typst Reference", colour: "239cad" },
-            { href: "https://math.stackexchange.com/", title: "Math SE", colour: "cb181f" },
-            { href: "https://matlab.mathworks.com", title: "MATLAB", colour: "f49610" },
             { href: "https://www.wolframalpha.com", title: "Wolfram Alpha", colour: "f88c63"},
-            { href: "https://www.desmos.com/calculator", title: "Desmos", colour: "00a513"}
+            { href: "https://typst.app/", title: "Typst", colour: "239cad" },
+            { href: "https://typst.app/docs/reference", title: "Typst Reference", colour: "239cad" },
+            // { href: "https://webwsp.aps.kuleuven.be/sap/bc/ui2/flp", title: "KU Loket", colour: "354a5f" },
+            { href: "https://onderwijsaanbod.kuleuven.be/opleidingen/n/SC_51016765.htm#bl=all", title: "Wiskundebachelor", colour: "00407a" },
+            // { href: "https://overleaf.com", title: "Overleaf", colour: "459c3f" },
+            // { href: "https://math.stackexchange.com/", title: "Math SE", colour: "cb181f" },
+            // { href: "https://matlab.mathworks.com", title: "MATLAB", colour: "f49610" },
+            { href: "https://www.desmos.com/calculator", title: "Desmos", colour: "00a513"},
+            { href: "https://www.desmos.com/3d", title: "Desmos 3D", colour: "00a513"}
+        ]
+    },
+    {
+        title: "Talig",
+        links: [
+            { href: "https://www.veto.be", title: "Veto", colour: "a62f28" },
+            { href: "https://labrador.veto.be", title: "Veto backend", colour: "363a3e" },
         ]
     }
 ]
