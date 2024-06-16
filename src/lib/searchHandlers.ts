@@ -13,5 +13,6 @@ export const searchHandlers: SearchHandler[] = [
     { prefix: "py",    searchUrl: "https://docs.python.org/3/search.html?check_keywords=yes&area=default&q="},
     { prefix: "cargo", searchUrl: "https://crates.io/search?q=" },
     { prefix: "tsym",  searchUrl: "https://typst.app/docs/reference/symbols/sym/?query=" },
-    { prefix: "genus", searchUrl: "https://www.inventio.nl/cgi-bin/genus.pl?woord=" }
+    { prefix: "genus", searchUrl: "https://www.inventio.nl/cgi-bin/genus.pl?woord=" },
+    { prefix: "gb",    searchUrl: "https://woordenlijst.org/zoeken/?q=" }
 ]

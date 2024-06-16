@@ -32,9 +32,10 @@ export const linkGroups: LinkGroup[] = [
             // { href: "https://twitch.tv", title: "Twitch", colour: "a970ff" },
             { href: "https://web.whatsapp.com/", title: "WhatsApp", colour: "00bd07" },
             { href: "https://instagram.com/", title: "Instagram", colour: "f69a4b" },
-            { href: "https://www.messenger.com", title: "Messenger", colour: "aa00ff"},
-            { href: "https://www.facebook.com", title: "Facebook", colour: "0866ff"},
-            { href: "https://winaleuven.workplace.com/", title: "Workplace", colour: "4125be"}
+            { href: "https://www.messenger.com", title: "Messenger", colour: "aa00ff" },
+            { href: "https://www.facebook.com", title: "Facebook", colour: "0866ff" },
+            { href: "https://winaleuven.workplace.com/", title: "Wina Workplace", colour: "4125be" },
+            { href: "https://mail.google.com/mail/u/2/#chat/home", title: "Wina Google Chat", colour: "4285f4" }
         ]
     },
     {
@@ -60,12 +61,12 @@ export const linkGroups: LinkGroup[] = [
         links: [
             { href: "https://toledo.kuleuven.be/portal", title: "Toledo", colour: "286090" },
             { href: "https://www.wolframalpha.com", title: "Wolfram Alpha", colour: "f88c63"},
-            { href: "https://typst.app/", title: "Typst", colour: "239cad" },
+            { href: "https://typst.app/app", title: "Typst App", colour: "239cad" },
             { href: "https://typst.app/docs/reference", title: "Typst Reference", colour: "239cad" },
             // { href: "https://webwsp.aps.kuleuven.be/sap/bc/ui2/flp", title: "KU Loket", colour: "354a5f" },
             { href: "https://onderwijsaanbod.kuleuven.be/opleidingen/n/SC_51016765.htm#bl=all", title: "Wiskundebachelor", colour: "00407a" },
             // { href: "https://overleaf.com", title: "Overleaf", colour: "459c3f" },
-            // { href: "https://math.stackexchange.com/", title: "Math SE", colour: "cb181f" },
+            { href: "https://math.stackexchange.com/", title: "Math SE", colour: "cb181f" },
             // { href: "https://matlab.mathworks.com", title: "MATLAB", colour: "f49610" },
             { href: "https://www.desmos.com/calculator", title: "Desmos", colour: "00a513"},
             { href: "https://www.desmos.com/3d", title: "Desmos 3D", colour: "00a513"}
