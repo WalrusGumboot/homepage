@@ -29,6 +29,9 @@
         zoekvak.focus();
     });
 
+    let navigatorLink = ""
+    let navigator: HTMLAnchorElement;
+
     const isValidUrl = (urlString: string) => {
 	  	var urlPattern = new RegExp('^(https?:\\/\\/)?'+ // validate protocol
 	    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // validate domain name
@@ -40,11 +43,18 @@
 	}
 
     function handleSearch(): string {
+        let retval = "";
+
         if (isValidUrl(query)) {
-            return encodeURI(query)
+            retval = encodeURI(query)
         }
         try {
-            return encodeURI(new URL(query).toString());
+
+            if (!retval.startsWith("http")) {
+                retval = "http://" + retval
+            }
+            
+            retval = encodeURI(new URL(query).toString());
         } catch (e) {
             for (let sh of searchHandlers) {
                 if (query.startsWith(handlerPrefix + sh.prefix)) {
@@ -53,12 +63,17 @@
                 }
             }
 
-            return encodeURI(`https://www.google.be/search?q=${query}`);
+            retval = encodeURI(`https://www.google.be/search?q=${query}`);
         }
+
+        console.log(retval)
+        return retval
     }
 
     let poort = "5173";
 </script>
+
+<a href={navigatorLink} bind:this={navigator} id="navigator" class="hidden"> </a>
 
 <div
     class="bg-black min-w-screen min-h-screen px-24 py-12 flex flex-col gap-3 text-white"
@@ -73,7 +88,8 @@
             bind:value={query}
             on:keypress={(e) => {
                 if (e.key == "Enter") {
-                    window.location.href = handleSearch();
+                    navigatorLink = handleSearch();
+                    navigator.click()
                 }
             }}
         />
@@ -89,10 +105,10 @@
         >
     </div>
 
-    <div class="grow flex flex-row gap-3">
+    <div class="grow flex flex-col lg:flex-row gap-3">
         {#each linkGroups.slice(0, -1) as lg}
             <div
-                class="bg-black hover:bg-neutral-950 w-1/4 p-4 border-neutral-800 border-2 transition-all duration-200"
+                class="bg-black hover:bg-neutral-950 w-full lg:w-1/4 p-4 border-neutral-800 border-2 transition-all duration-200"
             >
                 <h1 class="text-2xl mb-4">{lg.title}</h1>
                 <div class="flex flex-col gap-4 h-fit">
