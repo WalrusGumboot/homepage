@@ -29,32 +29,45 @@
         zoekvak.focus();
     });
 
-    let navigatorLink = ""
+    let navigatorLink = "";
     let navigator: HTMLAnchorElement;
 
     const isValidUrl = (urlString: string) => {
-	  	var urlPattern = new RegExp('^(https?:\\/\\/)?'+ // validate protocol
-	    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // validate domain name
-	    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // validate OR ip (v4) address
-	    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // validate port and path
-	    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // validate query string
-	    '(\\#[-a-z\\d_]*)?$','i'); // validate fragment locator
-	  return !!urlPattern.test(urlString);
-	}
+        var urlPattern = new RegExp(
+            "^(https?:\\/\\/)" + // validate protocol
+                "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // validate domain name
+                "((\\d{1,3}\\.){3}\\d{1,3}))" + // validate OR ip (v4) address
+                "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // validate port and path
+                "(\\?[;&a-z\\d%_.~+=-]*)?" + // validate query string
+                "(\\#[-a-z\\d_]*)?$",
+            "i",
+        ); // validate fragment locator
+        return !!urlPattern.test(urlString);
+    };
 
+    // holy shit dit is boecht
+    // mogelijks de slechtste code die ik het afgelopen jaar al schreef
+    // beste bedrijven: ik kan wel degelijk programmeren
+    // TODO: refactor dit allejezus
     function handleSearch(): string {
         let retval = "";
 
         if (isValidUrl(query)) {
-            retval = encodeURI(query)
+            console.log("already valid");
+            return encodeURI(query);
         }
         try {
-
-            if (!retval.startsWith("http")) {
-                retval = "http://" + retval
+            if (!query.startsWith("http")) {
+                console.log("added https://");
+                retval = "https://" + query;
             }
-            
-            retval = encodeURI(new URL(query).toString());
+
+            if (isValidUrl(retval)) {
+                console.log(`${retval} is een geldige URL`);
+                retval = encodeURI(retval);
+            } else {
+                retval = "";
+            }
         } catch (e) {
             for (let sh of searchHandlers) {
                 if (query.startsWith(handlerPrefix + sh.prefix)) {
@@ -62,18 +75,21 @@
                     return encodeURI(sh.searchUrl + query.replace(re, ""));
                 }
             }
-
-            retval = encodeURI(`https://www.google.be/search?q=${query}`);
         }
 
-        console.log(retval)
-        return retval
+        if (retval == "") {
+            console.log("fallthrough");
+            return encodeURI(`https://www.google.be/search?q=${query}`);
+        } else {
+            return retval;
+        }
     }
 
     let poort = "5173";
 </script>
 
-<a href={navigatorLink} bind:this={navigator} id="navigator" class="hidden"> </a>
+<a href={navigatorLink} bind:this={navigator} id="navigator" class="hidden">
+</a>
 
 <div
     class="bg-black min-w-screen min-h-screen px-24 py-12 flex flex-col gap-3 text-white"
@@ -88,8 +104,8 @@
             bind:value={query}
             on:keypress={(e) => {
                 if (e.key == "Enter") {
-                    navigatorLink = handleSearch();
-                    navigator.click()
+                    // window.location.replace(handleSearch());
+                    console.log(handleSearch());
                 }
             }}
         />
