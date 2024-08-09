@@ -50,25 +50,18 @@
     // beste bedrijven: ik kan wel degelijk programmeren
     // TODO: refactor dit allejezus
     function handleSearch(): string {
-        let retval = "";
-
         if (isValidUrl(query)) {
-            console.log("already valid");
             return encodeURI(query);
         }
-        try {
-            if (!query.startsWith("http")) {
-                console.log("added https://");
-                retval = "https://" + query;
-            }
 
-            if (isValidUrl(retval)) {
-                console.log(`${retval} is een geldige URL`);
-                retval = encodeURI(retval);
-            } else {
-                retval = "";
-            }
-        } catch (e) {
+        let candidate = "";
+        if (!query.startsWith("http")) {
+            candidate = "https://" + query;
+        }
+
+        if (isValidUrl(candidate)) {
+            return candidate;
+        } else {
             for (let sh of searchHandlers) {
                 if (query.startsWith(handlerPrefix + sh.prefix)) {
                     let re = RegExp(`${handlerPrefix}${sh.prefix}(\\s)*`);
@@ -77,12 +70,7 @@
             }
         }
 
-        if (retval == "") {
-            console.log("fallthrough");
-            return encodeURI(`https://www.google.be/search?q=${query}`);
-        } else {
-            return retval;
-        }
+        return encodeURI(`https://www.google.be/search?q=${query}`);
     }
 
     let poort = "5173";
@@ -104,8 +92,7 @@
             bind:value={query}
             on:keypress={(e) => {
                 if (e.key == "Enter") {
-                    // window.location.replace(handleSearch());
-                    console.log(handleSearch());
+                    window.location.replace(handleSearch());
                 }
             }}
         />
