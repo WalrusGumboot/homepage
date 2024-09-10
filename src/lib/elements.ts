@@ -13,15 +13,15 @@ export const linkGroups: LinkGroup[] = [
     {
         title: "Google",
         links: [
-            { href: "https://calendar.google.com/", title: "Calendar", colour: "4285f4" },
+            { href: "https://mail.google.com/", title: "Gmail", colour: "3a9e58" },
             // { href: "https://passwords.google.com/", title: "Passwords", colour: "4285f4" },
+            { href: "https://calendar.google.com/", title: "Calendar", colour: "4285f4" },
             { href: "https://drive.google.com/", title: "Drive", colour: "4285f4" },
             { href: "https://maps.google.com/", title: "Maps", colour: "4285f4" },
             { href: "https://photos.google.com/", title: "Photos", colour: "4285f4" },
             { href: "https://docs.google.com/document/u/0/", title: "Documents", colour: "4285f4" },
             { href: "https://keep.google.com/", title: "Keep", colour: "fbbc04" },
             { href: "https://docs.google.com/spreadsheets/u/0/", title: "Sheets", colour: "34a853" },
-            { href: "https://mail.google.com/", title: "Gmail", colour: "3a9e58" },
         ]
     },
     {
@@ -46,12 +46,12 @@ export const linkGroups: LinkGroup[] = [
             { href: "https://figma.com", title: "Figma", colour: "fe7161" },
             { href: "https://github.com", title: "GitHub", colour: "adbac7" },
             { href: "https://vercel.com/dashboard", title: "Vercel", colour: "ffffff" },
-            { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV Jira", colour: "0052cc" },
-            { href: "https://mobilevikings.atlassian.net/wiki/spaces/INT/pages/781942940/Technical+docs", title: "MV Technical Docs", colour: "0052cc" },
-            { href: "https://github.com/vikingco/mv-client", title: "mv-client", colour: "adbac7" },
+            // { href: "https://mobilevikings.atlassian.net/jira/software/c/projects/INT/boards/136", title: "MV Jira", colour: "0052cc" },
+            // { href: "https://mobilevikings.atlassian.net/wiki/spaces/INT/pages/781942940/Technical+docs", title: "MV Technical Docs", colour: "0052cc" },
+            // { href: "https://github.com/vikingco/mv-client", title: "mv-client", colour: "adbac7" },
             // { href: "https://github.com/vikingco/skipta", title: "skipta", colour: "adbac7" },
-            { href: "https://github.com/vikingco/unleashed-web-api", title: "uwa", colour: "adbac7" },
-            { href: "https://github.com/vikingco/snuru", title: "snuru", colour: "adbac7" },
+            // { href: "https://github.com/vikingco/unleashed-web-api", title: "uwa", colour: "adbac7" },
+            // { href: "https://github.com/vikingco/snuru", title: "snuru", colour: "adbac7" },
             { href: "https://regex101.com/", title: "RegEx101", colour: "1a2c42" },
             { href: "https://kwispel.letocart.be/", title: "Kwispel", colour: "f0ddc0" }
         ]

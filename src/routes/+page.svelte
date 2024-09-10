@@ -45,10 +45,6 @@
         return !!urlPattern.test(urlString);
     };
 
-    // holy shit dit is boecht
-    // mogelijks de slechtste code die ik het afgelopen jaar al schreef
-    // beste bedrijven: ik kan wel degelijk programmeren
-    // TODO: refactor dit allejezus
     function handleSearch(): string {
         if (isValidUrl(query)) {
             return encodeURI(query);
