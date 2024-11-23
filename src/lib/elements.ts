@@ -28,6 +28,7 @@ export const linkGroups: LinkGroup[] = [
         title: "Social",
         links: [
             { href: "https://www.twitter.com/", title: "Twitter", colour: "1d9bf0" },
+            { href: "https://bsky.app/", title: "Bluesky", colour: "208bfe"}, 
             { href: "https://www.youtube.com/", title: "YouTube", colour: "ff0000" },
             // { href: "https://twitch.tv", title: "Twitch", colour: "a970ff" },
             { href: "https://web.whatsapp.com/", title: "WhatsApp", colour: "00bd07" },
