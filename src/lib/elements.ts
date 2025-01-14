@@ -78,7 +78,8 @@ export const linkGroups: LinkGroup[] = [
         links: [
             { href: "https://www.veto.be", title: "Veto", colour: "a62f28" },
             { href: "https://labrador.veto.be", title: "Veto backend", colour: "363a3e" },
-            { href: "https://vetobe.workplace.com", title: "Veto Workplace", colour: "4125be" },
+            // { href: "https://vetobe.workplace.com", title: "Veto Workplace", colour: "4125be" },
+            { href: "https://www.demorgen.be/", title: "De Morgen", colour: "ed1b2f" },
             { href: "https://mail.google.com/chat/u/3/#chat/home", title: "Veto Google Chat", colour: "4285f4" }
             
         ]
